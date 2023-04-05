@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive Website Travel</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">热爱篮球</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">主页</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">今日赛事</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">发现</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">球员评分</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">夜间模式</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/home1.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">2022-2023赛季</span>
+                        <h1 class="home__data-title">NBA<br> 季后赛 <b>征程<br> 即将开启</b></h1>
+                        <a href="#" class="button">详情</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title"></span>赛程
+                            <a href="" class="button button--flex button--link home__info-button">
+                              预告<i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="assets/img/home2.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">赛事回顾<br> 今日热点</h2>
+                        <p class="about__description">库里8记三分空砍50分 勇士负快船客场9连败
+                            神仙打架！德罗赞3+1扳平，福克斯反手0.7秒绝杀
+                            争议一幕！狄龙救球失败 左手发力故意推翻摄影师
+                            有人说詹姆斯会让他变有钱，而他最大的财富就是浪子回头
+                            莫兰特道歉：我犯了大错 我为我的行为负全部责任
+                            他是NBA现役最壮的男人，连字母哥都自愧不如
+                            内线被打爆！湖人负西部垫底队 拉塞尔17中5
+                            湖人赢球！反而跌到西部第十！再见！这瓜真的很甜！
+                            35岁的库里，他的表现是什么水平？
+                            欧文连续缺席两场又开始拆队？知晓他请假原因，球迷排队道歉
+                            凯尔特人不敌倒数第一，这么打下去还能续约布朗吗
+                        </p>
+                        <a href="#" class="button">其他赛事</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about1.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about2.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">球员<br> 故事</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover1.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">詹姆斯-哈登</h2>
+                                <span class="discover__description">Phila Sixer</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover2.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">扬尼斯-阿德托昆博</h2>
+                                <span class="discover__description">Milwaukee Bucks</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover3.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">特雷-墨菲三世</h2>
+                                <span class="discover__description">New Orleans Pelicans</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/discover4.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">马利克-比斯利</h2>
+                                <span class="discover__description">Los Angeles Lakers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+                <h2 class="section__title">球员奖项<br>历史得分王记录</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">29.5</h2>
+                            <span class="experience__description">场均 <br>得分</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">8.4</h2>
+                            <span class="experience__description">场均 <br> 篮板</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">38390+</h2>
+                            <span class="experience__description">生涯至今 <br> 得分总计</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="assets/img/experience1.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="assets/img/experience2.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">高光集锦</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">拉塞尔-威斯布鲁克（Russel Westbrook)
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="assets/video/video.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PLACES ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">球员评分</h2>
+
+                <div class="place__container container grid">
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place1.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">9.8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">勒布朗-詹姆斯</h3>
+                                <span class="place__subtitle">洛杉矶湖人</span>
+                                <span class="place__price">999+人参与</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place2.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">9.5</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">扬尼斯-阿德托昆博</h3>
+                                <span class="place__subtitle">密尔沃基雄鹿</span>
+                                <span class="place__price">999+人参与</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place3.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">9.8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">凯里-欧文</h3>
+                                <span class="place__subtitle">达拉斯独行侠</span>
+                                <span class="place__price">999+人参与</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place4.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">9.9</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">卢卡-东契奇</h3>
+                                <span class="place__subtitle">达拉斯独行侠</span>
+                                <span class="place__price">999+人参与</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 5 ====================-->
+                    <div class="place__card">
+                        <img src="assets/img/place5.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">9.5</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">劳里-马尔卡宁r</h3>
+                                <span class="place__subtitle">犹他爵士</span>
+                                <span class="place__price">999+人参与</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SUBSCRIBE ====================-->
+            <section class="subscribe section">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section__title subscribe__title">搜索 <br> 获取更多关于篮球运动的精彩内容</h2>
+                        <p class="subscribe__description">尝试输入自己喜欢的球员或球队
+                        </p>
+    
+                        <form action="" class="subscribe__form">
+                            <input type="text" placeholder="例如：史蒂芬库里" class="subscribe__input">
+    
+                            <button class="button">
+                                搜索一下
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== SPONSORS ====================-->
+            <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors1.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors2.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors3.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors4.png" alt="" class="sponsor__img">
+                    </div>
+                    <div class="sponsor__content">
+                        <img src="assets/img/sponsors5.png" alt="" class="sponsor__img">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">NBA赛事</h3>
+                        <p class="footer__description">
+                            选秀大会
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">关于</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">NBA历史</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">75大球星</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">NBA知识</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">专题</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">联盟的骄傲</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">球员历史记录</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">队史记录</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">NBA资料</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">历届得分王</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">历届助攻王</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">历届状元秀</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2023 Tuquan Chan. All rigths reserved.</p>
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
